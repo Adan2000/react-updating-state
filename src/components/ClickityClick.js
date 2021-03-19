@@ -9,14 +9,17 @@ class ClickityClick extends React.Component {
       hasBeenClicked: false
     };
   }
-  //we set the initial state of hasBeenClicked to false
+  //after the function works the hasBeenClicked
+  //then changes to 'true'
 
   handleClick = () => {
     this.setState({
         hasBeenClicked: true
     })
   };
-//this changes the hasBeenClicked to true 
+  //after the button gets clicked it triggers this setState function
+  //this function then uses the setState 
+  //in order to SET the current state to true.
 
   render() {
     return (
@@ -29,3 +32,10 @@ class ClickityClick extends React.Component {
 }
 
 export default ClickityClick;
+//we create a button that has a event listener (onClick)
+//when that button gets triggered it then triggers the handleClick function
+
+//the p tag line then checl the state and if it is null then 
+//it will print our 'not' otherwise it will 
+//print out that it was clicked
+
